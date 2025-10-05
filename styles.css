@@ -60,6 +60,7 @@
 }
 
 .frame {
+  position:relative;
   display: grid;
   min-height: 600px;
   max-width: 400px;
@@ -103,19 +104,6 @@
   margin: center;
 }
 
-.click {
-  color: rgba(240, 248, 255, 0.788);
-  font-family: "Lavishly Yours", "ZCOOL XiaoWei", cursive;
-  max-height: 1.3em;
-  max-width: 4em;
-  margin-top:4%;
-  padding-bottom:4%;
-  line-height: 1;
-  font-size: 3em;
-  background-color: rgba(167, 183, 211, 0.873);
-  border: 3px solid rgba(211, 217, 230, 0.942);
-  border-radius: 12px;
-}
 .arraw {
   color: rgba(240, 248, 255, 0.788);
   max-height: 1.3em;
@@ -142,68 +130,11 @@
   justify-self: right;
 }
 
-.flame {
-  position: absolute;
-  left: 50%;
-  top:6%;
-  transform: translateX(-50%);
-  width: 16px;
-  height: 24px;
-  background: radial-gradient(
-    circle at 50% 70%,
-    yellow 20%,
-    orange 70%,
-    transparent 100%
-  );
-  border-radius: 50%;
-  opacity: 0;
-  transition: transform 260ms ease, opacity 260ms ease;
-  pointer-events: none;
-}
-.flame.lit {
-  transform: translateX(-50%) scale(1);
-  opacity: 1;
-  animation: flicker 0.2s infinite alternate;
-}
 body {
   background-image: url("backgroundhzy.jpg");
   background-repeat:no-repeat;
   background-size:cover;
   backgroun-position:center;
-}
-.switch-container {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 20px;
-}
-
-.switch {
-  width: 22px; /* 按钮窄一点，竖向 */
-  height: 35px; /* 按钮高一点 */
-  background-color: #fff;
-  border: 2px solid #c5b5b5;
-  border-radius: 15px;
-  position: relative;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-/* 小球 */
-.switch::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 17px;
-  height: 15px;
-  background-color:#d8ceb8; /* 黄色表示灯泡 */
-  border-radius: 50%;
-  transition: transform 0.3s;
-}
-
-/* 开灯状态，小球向下移动 */
-.switch.on::after {
-  transform: translateY(17px);
 }
 @media (max-width: 768px) {
   .container {
