@@ -11,12 +11,7 @@
     <div id="page1"class="frame">
       <div class="container_">
         <h1 class="happy">happy birthday</h1>
-        <div class="candle-container">
-          <div class="flame" id="flame"></div>
           <img class="imgCake" src="cakehzy.png">
-          <div class="switch-container">
-            <button id="Lit" class="switch"></button>
-          </div>
         </div>
         <div class="button-row">
           <button id="back" class="arraw">◀</button>
@@ -117,12 +112,6 @@
       } else {
         el.style.fontSize = "3em"; 
       }
-    });
-    const btn = document.getElementById("Lit");
-    const flameid = document.getElementById("flame");
-    btn.addEventListener("click", () => {
-      flameid.classList.toggle("lit");
-      btn.classList.toggle("on");
     });
 
     const clickList=["haha","gun"];
