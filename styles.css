@@ -88,9 +88,9 @@
 }
 .container {
   position:relative;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 1.2em;
-  display: grid;
   place-items: center;
   height: auto;
 }
