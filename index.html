@@ -55,7 +55,7 @@
         <video controls width="85%">
           <source src="hzyVideo.mp4" type="video/mp4">
         </video>
-        <p class="title_video">文字</p>
+        <p class="title_video">最好的妈妈</p>
       </div>
       <div class="button-row">
         <button id="back" class="arraw">◀</button>
@@ -64,15 +64,13 @@
     </div>
     <div id="page4" class="frameVideoPage" style="display: none">
       <div class="container_">
-        <video controls width="85%" autoplay>
+        <video controls width="85%">
           <source src="hzyVideo2.mp4">
         </video>
-          <button id="haha" class="click">哈哈哈</button>
-          <button id="gun" class="click">滚</button>
+          <button id="haha" class="click">Coco</button>
       </div>
       <div class="container">
-        <img id="img11" class="img2" src="img11.jpg" style="display:none"/>
-        <img id="img12" class="img2" src="img12.jpg" style="display:none"/>
+        <img id="img11" class="img2" src="img11.jpg"/>
       </div>
     </div>
   </body>
@@ -117,10 +115,7 @@
     const clickList=["haha","gun"];
     clickList.forEach(id=> {
       document.getElementById(id).addEventListener("click",()=>{
-        if (id==="haha"){
-          document.getElementById("img11").style.display="block";
-          document.getElementById("img12").style.display="block";
-        }else if(id==="gun"){
+        }else if(id==="haha"){
           document.getElementById("img11").src="img21.jpg";
           document.getElementById("img12").src="img22.jpg";
         }
