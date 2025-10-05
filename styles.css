@@ -171,8 +171,52 @@ body {
   background-size:cover;
   backgroun-position:center;
 }
+.switch-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.switch {
+  width: 22px; /* 按钮窄一点，竖向 */
+  height: 35px; /* 按钮高一点 */
+  background-color: #fff;
+  border: 2px solid #c5b5b5;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* 小球 */
+.switch::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 17px;
+  height: 15px;
+  background-color:#d8ceb8; /* 黄色表示灯泡 */
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+/* 开灯状态，小球向下移动 */
+.switch.on::after {
+  transform: translateY(17px);
+}
 @media (max-width: 768px) {
   .container {
     grid-template-columns: 1fr;
+  }
+}
+@keyframes flicker {
+  from {
+    transform: translateX(-50%) scale(0.95);
+    opacity: 0.9;
+  }
+  to {
+    transform: translateX(-50%) scale(1.05);
+    opacity: 1;
   }
 }
