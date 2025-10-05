@@ -89,6 +89,7 @@
   background-color: #d6ceb0c9;
 }
 .container {
+  position:relative;
   grid-template-columns: 1fr 1fr;
   column-gap: 1.2em;
   display: grid;
