@@ -114,7 +114,19 @@
   border: 3px solid rgba(211, 217, 230, 0.942);
   border-radius: 12px;
 }
-
+.click {
+  color: rgba(240, 248, 255, 0.788);
+  font-family: "Lavishly Yours", "ZCOOL XiaoWei", cursive;
+  max-height: 1.3em;
+  max-width: 4em;
+  margin-top:4%;
+  padding-bottom:4%;
+  line-height: 1;
+  font-size: 3em;
+  background-color: rgba(167, 183, 211, 0.873);
+  border: 3px solid rgba(211, 217, 230, 0.942);
+  border-radius: 12px;
+}
 .button-row {
   position:relative;
   display: flex;
