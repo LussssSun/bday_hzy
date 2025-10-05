@@ -34,12 +34,12 @@
   margin-block: 10%;
   color: rgb(227, 229, 238);
 }
-.imgCake {
-  position: absolute;
-  bottom: 0;
-  width: 200px;
-  height: 150px;
-  object-fit: contain;
+.imgCake{
+  display:block;
+  height:80%;
+  width:80%;
+  margin:auto;
+  object-fit:contain;
 }
 .img1 {
   height: 300px;
@@ -95,7 +95,6 @@
   height: auto;
 }
 .container_ {
-  position:relative;
   display: grid;
   place-items: center;
   padding: 3%;
