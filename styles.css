@@ -64,7 +64,7 @@
   min-height: 600px;
   max-width: 400px;
   margin: 4% auto;
-  background-color: rgba(242, 229, 213, 0.782)
+  background-color: #f2e1d5af;
 }
 .framePicPage {
   display: grid;
@@ -74,7 +74,7 @@
   min-height: 600px;
   max-width: 650px;
   margin: 4% auto;
-  background-color: rgba(242, 229, 213, 0.782);
+  background-color:#f2e1d5af;
   padding: 3%;
 }
 .frameVideoPage {
@@ -84,7 +84,7 @@
   width: 90%;
   min-height: 600px;
   margin: 4% auto;
-  background-color: #d6ceb0c9;
+  background-color: #f2e1d5af;
 }
 .container {
   position:relative;
